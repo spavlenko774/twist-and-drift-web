@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Twist _ Drift</title>
+    <title>Unity Web Player | Twist and Drift</title>
     <style>
         html, body {
             margin: 0;
@@ -25,7 +25,7 @@
 </head>
 <body>
     <canvas id="unity-canvas" tabindex="-1"></canvas>
-    <script src="Build/twist-and-drift-web.loader.js"></script>
+    <script src="Build/web buildandrun.loader.js"></script>
     <script>
         function resizeCanvas() {
             var canvas = document.querySelector("#unity-canvas");
@@ -38,15 +38,15 @@
 
         createUnityInstance(document.querySelector("#unity-canvas"), {
             arguments: [],
-            dataUrl: "Build/twist-and-drift-web.data",
-            frameworkUrl: "Build/twist-and-drift-web.framework.js",
-            codeUrl: "Build/twist-and-drift-web.wasm",
+            dataUrl: "Build/web buildandrun.data",
+            frameworkUrl: "Build/web buildandrun.framework.js",
+            codeUrl: "Build/web buildandrun.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "Twist _ Drift",
+            productName: "Twist and Drift",
             productVersion: "0.1.0"
         }).then((unityInstance) => {
-            resizeCanvas(); // Обновляем размер при загрузке Unity
+            resizeCanvas();
         });
     </script>
 </body>
